@@ -9,14 +9,14 @@ You can follow the first lab with an AWS sandbox account and AWS CLI. Docker and
 1. Follow [00 — Getting started](00-getting-started.md) to check your tools and AWS identity, then create, use, and delete a private S3 bucket.
 2. Read [01 — Foundations](01-foundations.md) for accounts, IAM, and networking.
 3. Use [02 — Architecture and services](02-architecture-and-services.md) as a map of common AWS choices.
-4. Choose a track in [04 — Hands-on labs](04-hands-on-labs.md): S3 and SQS for focused service practice, or the longer VPC → ECR → ECS/Fargate → HTTPS → PostgreSQL path.
+4. Choose a track in [04 — Hands-on labs](04-hands-on-labs.md): the standalone S3/SQS path for focused service practice, or the longer VPC → ECR → ECS/Fargate → HTTPS → PostgreSQL path.
 5. Keep [03 — Operations and reference](03-operations-and-reference.md) nearby while debugging and cleaning up.
 6. Check [05 — Sources and currency](05-sources-and-currency.md) before relying on service lifecycle or pricing details.
 
 | Path | What you will practice | Requirements |
 | --- | --- | --- |
 | First S3 lab | AWS CLI identity, region, bucket security, upload, download, and cleanup | Sandbox account, AWS CLI v2, authorized S3 access |
-| S3 and SQS labs | Object storage, presigned downloads, message visibility, retries, and dead-letter queues | Sandbox account, AWS CLI v2, CloudFormation permissions |
+| S3 and SQS labs | Object storage, presigned downloads, message visibility, retries, and dead-letter queues | Sandbox account, AWS CLI v2, Python 3, `jq`, `curl`, CloudFormation permissions |
 | Container service labs | VPCs, IAM roles, ECR, ECS/Fargate, load balancing, HTTPS, PostgreSQL, alarms, and recovery | Dedicated sandbox, Docker, broader reviewed deployment permissions, and a budget |
 
 The advanced labs can create resources that keep billing while idle, including NAT gateways, load balancers, databases, caches, and retained storage. Read each lab's cost and cleanup notes before applying a CloudFormation change set. A budget sends alerts; it does not stop spending. Use synthetic data and a dedicated sandbox account, never production.
